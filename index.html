@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h1>How to make no-bake coffee energy balls</h1>
+            <img src="https://i.imgur.com/sHfFdfZ.jpg">
+            <p>These protein balls are quick and easy to make and perfect if you want to give yourself an early-morning or late-afternoon energy boost. On top of that, studies have shown coffee is rich in powerful antioxidants and can help you live longer.</p>
+        </header>
+        <section id="ingredients" onmouseover="ingredientsHover()" onmouseout="ingredientsNormal()">
+            <h2>ingredients <i class="fa fa-cart-arrow-down" aria-hidden="true"></i></h2>
+            <ul>
+                <li>1/4 cup oats</li>
+                <li>1/2 cup unsweetened shredded coconut, plus 2 tbsp for rolling</li>
+                <li>1 ripe banana</li>
+                <li>5 tbsp cold brew coffee concentrate</li>
+                <li>1/4 cup peanut butter</li>
+                <li>4 tsp cocoa powder</li>
+                <li>1 tbsp chia seeds</li>
+                <li>2 tbsp maple syrup</li>
+            </ul>
+        </section>
+        <section id="preparation" onmouseover="preparationHover()" onmouseout="preparationNormal()">
+            <h2>preparation <i class="fa fa-spoon" aria-hidden="true"></i></h2>
+            <ol>
+                <li>
+                    Put the oats, shreddded coconut and banana in a blender for 2-3 minutes (blend until fine).
+                </li>
+                <li>
+                    In a large bowl, add the contents from 1. together with the coffee, peanut butter, cocoa powder, chia seeds and maple syrup.
+                </li>
+                <li>
+                    Stir the mixture in the large bowl until <i>well</i> combined.
+                </li>
+                <li>
+                    Roll the mixutre into well sized golf balls and then roll each ball in the additional coconut.
+                </li>
+                <li>
+                    Place each ball separately onto a tray and let the balls settle in the refridgerator for an hour.
+                </li>
+                <li>
+                    Take the balls and place them into an air-tight container and leave them in the refridgerator. Store the balls in the freezer if you would like to enjoy them for longer.
+                </li>
+                <li>
+                    Enjoy!
+                </li>
+            </ol>
+        </section>
+        <footer>
+            <p>Copyright Me 2019</p>
+        </footer>
+    </div>
+    <script>
+        function ingredientsHover() {
+            document.getElementById('ingredients').firstElementChild.firstElementChild.style.fontSize = "300%";
+        }
+
+        function ingredientsNormal() {
+            document.getElementById('ingredients').firstElementChild.firstElementChild.style.fontSize = "100%";
+        }
+
+        function preparationHover() {
+            document.getElementById('preparation').firstElementChild.firstElementChild.style.fontSize = "300%";
+        }
+
+        function preparationNormal() {
+            document.getElementById('preparation').firstElementChild.firstElementChild.style.fontSize = "100%";
+        }
+    </script>
+</body>
+
+</html>
